@@ -8,7 +8,7 @@ export let options:Options = {
 };
 
 export default () => {
-  const res = http.get('https://test-api.k6.io');
+  const res = http.get('https://cdn.segment.com/v1/projects/D85a8FDQrDeMzkihHnm5r2ulc2APP2vt/settings');
   check(res, {
     'status is 200': () => res.status === 200,
   });
