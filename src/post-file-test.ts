@@ -3,7 +3,7 @@ import { Options } from 'k6/options';
 import http, { StructuredRequestBody } from 'k6/http';
 
 const binFile = open('test.png', 'b');
-const url = `https://httpbin.org/post`;
+const url = `https://cdn.segment.com/v1/projects/D85a8FDQrDeMzkihHnm5r2ulc2APP2vt/settings`;
 
 export let options:Options = {
   vus: 5,
