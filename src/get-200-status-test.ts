@@ -9,13 +9,6 @@ export let options:Options = {
 const session = new Httpx();
 export default () => {
   const res = http.get('https://c.us.heap-api.com/api/capture/v2/track');
-/*  session.addHeaders({
-  'accept': '*/*',
-  'accept-encoding': 'gzip, deflate, br, zstd',
-  'Content-Type': 'application/json',
-  'referer': 'https://app-stage.pluralsight.com/library/',
-  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
-});*/
   check(res, {
     'status is 200': () => res.status === 200,
   });
