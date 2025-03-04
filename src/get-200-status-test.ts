@@ -6,7 +6,6 @@ export let options:Options = {
   vus: 1,
   duration: '30s'
 };
-const session = new Httpx();
 export default () => {
   const res = http.get('https://c.us.heap-api.com/api/capture/v2/track');
   check(res, {
